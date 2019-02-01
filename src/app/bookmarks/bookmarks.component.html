@@ -1,0 +1,8 @@
+<h2 style="text-align: center">Bookmarked Items</h2>
+<div fxLayout="column" fxLayoutGap="5px">
+    <mat-card *ngFor="let bookmark of bookmarksChild" (click)="showSynoynms(bookmark.synoynms)">
+        <mat-card-header>
+            <mat-card-title>{{ bookmark.searchText }}</mat-card-title>
+          </mat-card-header> 
+     </mat-card>
+  </div>
